@@ -15,6 +15,28 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 body {
   font-family: Inter;
 }
+/* Customize scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /*Re used classes*/
 .fw-400 {
   font-weight: 400 !important;
@@ -147,10 +169,12 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-.dropdown-btn:hover,.dropdown-btn:focus,.dropdown-btn:active{
+.dropdown-btn:hover,
+.dropdown-btn:focus,
+.dropdown-btn:active {
   background-color: #ffffff !important;
   color: #32012f !important;
-  border:none;
+  border: none;
 }
 .dropdown-menu {
   min-width: 100%;
@@ -183,12 +207,14 @@ body {
 }
 
 .main-layout {
+  overflow: hidden;
   display: flex;
   flex: 1;
   background-color: #f4f4f4;
 }
 
 .left-nav {
+  overflow: auto;
   width: 200px;
   background-color: #333;
   color: white;
@@ -216,7 +242,7 @@ body {
 }
 
 .chat-box {
-  width:80%;
+  width: 80%;
   background-color: #fff;
   border-left: 1px solid #ddd;
   padding: 20px;
@@ -250,35 +276,36 @@ body {
   border: none;
   border-radius: 5px;
 }
-.Msg-box{
+.Msg-box {
   display: flex;
   flex-direction: column;
   gap: 20px;
   max-height: 666px;
-    overflow: auto;
-    padding-right: 20px;
+  overflow: auto;
+  padding-right: 20px;
 }
-.Msg{
-  padding:4px 6px;
+.Msg {
+  padding: 4px 6px;
   width: max-content;
   max-width: 700px;
   margin-bottom: 10px;
-  border-radius:5px;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+  border-radius: 5px;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
-.Msg-txt{
-  padding:4px 6px;
-  border-radius:5px;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+.Msg-txt {
+  padding: 4px 6px;
+  border-radius: 5px;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 
 .users {
+  overflow: auto;
   width: 20%;
   padding: 20px;
 }
